@@ -1,0 +1,17 @@
+# Makes two random lists and prints out the integers in common
+import random
+
+a =random.sample(range(50), 10)
+b =random.sample(range(50), 10)
+
+print(a)
+
+print(b)
+
+same = []
+
+for elem in a:
+    if elem in b:
+        same.append(elem)
+
+print(same)
