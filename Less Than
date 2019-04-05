@@ -1,0 +1,20 @@
+# User inputs range, list length, and the number chosen
+# Program outputs the random list made and the numbers that are less
+# than the number chosen
+
+import random
+numRange = int(input("List range? "))
+numInt = int(input("How many integers in the list? "))
+lessThan = int(input("Integers less than what number? "))
+
+a = random.sample(range(numRange), numInt)
+
+empty = []
+
+print(a)
+
+for elem in a:
+    if elem < lessThan:
+        empty.append(elem)
+
+print(empty)
